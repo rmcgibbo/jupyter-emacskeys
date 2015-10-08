@@ -3,7 +3,7 @@ from basesetup import cmdclass
 
 setup(
     name='jupyter-emacskeys',
-    version="0.2",
+    version="0.2.2",
     description="Emacs-style keybindings for the Jupyter notebook",
     author="Robert T. McGibbon",    
     author_email="rmcgibbo@gmail.com",
