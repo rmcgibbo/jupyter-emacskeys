@@ -11,7 +11,7 @@ except:
 
 setup(
     name='jupyter-emacskeys',
-    version="0.3",
+    version="0.2",
     description="Emacs-style keybindings for the Jupyter notebook",
     author="Robert T. McGibbon",    
     author_email="rmcgibbo@gmail.com",
