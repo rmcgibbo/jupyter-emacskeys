@@ -5,5 +5,7 @@ for navigation within cells (Ctrl-A, Crtl-E, Ctrl-W, Ctrl-D, Ctrl-K,
 Ctrl-Y).
 
 ### Installation
+```
 pip install jupyter-emacskeys
+```
 
