@@ -1,13 +1,5 @@
 from setuptools import setup
-
-try:
-    from jupyterpip import cmdclass
-except:
-    import pip, importlib
-    pip.main(['install', 'jupyter-pip'])
-    cmdclass = importlib.import_module('jupyterpip').cmdclass
-
-
+from basesetup import cmdclass
 
 setup(
     name='jupyter-emacskeys',
@@ -20,7 +12,8 @@ setup(
                  'Programming Language :: Python',
                  'License :: OSI Approved'],
     packages=['jupyter_emacskeys'],
-    install_requires=["jupyter-pip"],
-    cmdclass=cmdclass('jupyter_emacskeys', 'jupyter_emacskeys/init'),
+    setup_requires=['ipython>=4', 'notebook>=4'],
+    install_requires=['ipython>=4', 'notebook>=4'],
+    cmdclass=cmdclass('jupyter_emacskeys', enable=True),
     include_package_data=True,
 )
