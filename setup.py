@@ -3,9 +3,9 @@ from basesetup import cmdclass
 
 setup(
     name='jupyter-emacskeys',
-    version="0.2.2",
+    version="0.2.3",
     description="Emacs-style keybindings for the Jupyter notebook",
-    author="Robert T. McGibbon",    
+    author="Robert T. McGibbon",
     author_email="rmcgibbo@gmail.com",
     license="New BSD license",
     classifiers=['Development Status :: 3 - Alpha',
@@ -14,6 +14,6 @@ setup(
     packages=['jupyter_emacskeys'],
     setup_requires=['ipython>=4', 'notebook>=4'],
     install_requires=['ipython>=4', 'notebook>=4'],
-    cmdclass=cmdclass('jupyter_emacskeys', enable=True),
+    cmdclass=cmdclass('jupyter_emacskeys', enable='jupyter_emacskeys/init'),
     include_package_data=True,
 )
