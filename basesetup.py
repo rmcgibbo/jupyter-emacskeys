@@ -80,7 +80,7 @@ def cmdclass(path, enable=None, user=None):
 
         def run(self):
             print("Installing Python module...")
-            super(InstallCommand, self).run()
+            install.run(self)
             print("Installing nbextension...")
             self.run_nbextension_install(False)
 
