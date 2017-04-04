@@ -10,6 +10,8 @@ define([
         // all newly created cells will have them.
         var extraKeys = CodeMirror.keyMap.emacs;
 
+        if (!extraKeys["Enter"]) extraKeys["Enter"] = "newlineAndIndent";
+
         // override Ctrl-Y to not select the whole line, because I
         // don't like that feature
         var ctrl_y_super = extraKeys["Ctrl-Y"];
